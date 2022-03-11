@@ -40,7 +40,7 @@ export default class Assignment extends React.Component{
             <div>
                 <input type="text" onChange={this.handleinput} value={this.state.taskInput}/>
                 {/* <h1>{this.state.taskInput}</h1> */}
-                <button onClick={this.handlepush}>Add Task</button>
+                <button onClick={this.handlepush} disabled={this.state.taskInput===""?true:false}>Add Task</button>
 
                 <h2>Tasks to do</h2>
                 <div>
